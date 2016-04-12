@@ -1,0 +1,6 @@
+<h1>massage is <%= $txt %></h1>
+<p>ok?</p>
+<%= form_for Tweet.new, :url => { :action=> "tweetSave" } do |f| %>
+ <%=f.submit "OK!", :name => "cbt0" %>
+ <%=f.submit "NO!", :name => "cbt1" %>
+<%end%>
