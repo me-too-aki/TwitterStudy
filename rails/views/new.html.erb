@@ -1,0 +1,5 @@
+<%= form_for Tweet.new do |f| %>
+<p><%=f.label :"let's tweet"%></p>
+<p><%=f.text_area :content%></p>
+<p><%=f.submit%></p>
+<%end%>
